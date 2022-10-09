@@ -33,7 +33,6 @@ header{
 }
 #contenedor nav a{
     padding: 12px;
-    background-color: blueviolet;
     color: #fff;
 }
 #contenedor img{
@@ -47,9 +46,9 @@ main{
 }
 #contenedormain{
 width: 900px;
-background-color:aqua;
 text-align: center;
-margin-left: 500px;
+margin: 0px 500px 200px 500px;
+padding: 0px 0px 30px 0px;
 }
 h1{
     background-color: #2488AA;
@@ -59,13 +58,64 @@ h1{
 }
 #Buscador{
     background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
-    background-size: 24px;
+    background-size: 35px;
     width: 400px;
-    height: 5px;
     border: transparent;
     border-bottom: solid 1px #ccc;
-    padding: 20px 10px 0px 40px;
+    padding: 15px 10px 10px 40px;
     outline: none;
-    background-color: antiquewhite;
-    justify-content: flex-end;
+    background-color: #fff;
+    margin-top: 40px;
   }
+
+  /*hero banner  */
+#heroBanner{
+    height: 700px;
+    background-image:url(/Imagenes/Fondo-Banner.jpg) ; /* el ../ sube un nivel , es decir sale de una carpeta y abre otra para buscar la foto*/
+    background-repeat: no-repeat; /* no repite la  imagen auqnue sea pequeña*/
+    background-size: 100% 100%; /*corrige la imagen*/
+    /*  background-position: */
+    display: flex;
+    align-items:center ; /*en el eje vertical ubica los contenedores*/
+}
+#heroBanner div {
+    width: 1100px;
+    margin: auto;
+    background-color: rgba(204, 204, 204, 0.316);
+}  
+#heroBanner h2{
+    font-size: 40px;
+    color: #FFB968;
+    font-weight: 600;
+    width: 410px;
+    margin-bottom: 24px;
+}
+#heroBanner div p{
+    width: 408px;
+}  
+#contenido{
+width: 1200px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+#contenido article{
+width: 326px;
+height: 300px;
+margin-bottom: 76px;
+background-color: #2488AA;
+border-radius: 50%;
+text-align: center;
+align-items: center;
+}
+#contenido article img{
+margin-right: 8px;
+position: relative;
+top: 50px;
+}
+#contenido article h2{
+margin-right: 12px;
+position: relative;
+top: 70px;
+}
+
